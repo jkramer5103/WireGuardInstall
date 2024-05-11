@@ -1,3 +1,5 @@
+apt update
+apt upgrade -y
 #!/bin/bash
 #
 # https://github.com/Nyr/wireguard-install
