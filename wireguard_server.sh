@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Prüfen, ob das Skript mit Root-Rechten ausgeführt wird
@@ -5,6 +6,8 @@ if [[ $EUID -ne 0 ]]; then
    echo "Dieses Skript muss mit Root-Rechten ausgeführt werden" 
    exit 1
 fi
+apt update
+apt upgrade -y
 
 # Standardwerte für Variablen
 DEFAULT_WG_IPV4="10.0.0.1"
